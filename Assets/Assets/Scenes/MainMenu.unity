@@ -1297,18 +1297,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1328258171}
     m_Modifications:
-    - target: {fileID: 761265206004825171, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 761265206004825171, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 2100000, guid: 7bffd0374eb4cc343a00b003d714192d, type: 2}
-    - target: {fileID: 761511643785022835, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2549982430624951203, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1329,26 +1317,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2714789466765026988, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4436065334672431492, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
       propertyPath: m_Name
       value: MainMenu
       objectReference: {fileID: 0}
-    - target: {fileID: 6303556075777764773, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9908f4cce29c4a64d901daf390aeb982, type: 3}
-    - target: {fileID: 6303556075777764773, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 2100000, guid: 4807db956a4c4fe499cdf8f14b0bc185, type: 2}
-    - target: {fileID: 7147497394724171887, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 9908f4cce29c4a64d901daf390aeb982, type: 3}
     - target: {fileID: 7960068880107145307, guid: 32add3983dff0624b980a3fd540fbbca, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
