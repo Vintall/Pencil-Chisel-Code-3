@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SisyphusSpriteSheet
+  m_Name: SisyphusDeath
   m_Shader: {fileID: -6465566751694194690, guid: 581dfbe75fabd094e9317698e71c434f, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 53453c2afd2fe2b45916d54d18b7e659, type: 3}
+        m_Texture: {fileID: 2800000, guid: d78a63f38a5f8fe4ebab6cfab5e56813, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:

@@ -49279,7 +49279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5820123206436377765}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.13052616, w: 0.9914449}
   m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
@@ -49292,7 +49292,7 @@ Transform:
   - {fileID: 4715630565624589047}
   - {fileID: 1506527263254972992}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
 --- !u!198 &5815771583793804094
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -54115,12 +54115,12 @@ MonoBehaviour:
   - {fileID: 7069174917147074308}
   - {fileID: 7270860132448128274}
   _lethalCollider:
-  - {fileID: 8427168327254952035}
-  - {fileID: 4769674224282011680}
-  - {fileID: 7410396219722228918}
-  - {fileID: 4139614967856364549}
-  - {fileID: 7789198315572261886}
-  - {fileID: 5829059135642712617}
+  - {fileID: 3255493027121797124}
+  - {fileID: 8298679426577072402}
+  - {fileID: 383947092893876138}
+  - {fileID: 5954222762059762806}
+  - {fileID: 5538209371934840109}
+  - {fileID: 4979988766475251011}
   _triggerCollider: {fileID: 3968932425841438121}
 --- !u!1 &5829059135642712617
 GameObject:
