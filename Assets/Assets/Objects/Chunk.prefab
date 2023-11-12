@@ -1652,7 +1652,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 55
+        scalar: 35
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -6790,7 +6790,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 80
+        scalar: 45
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -12064,7 +12064,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 40
+        scalar: 25
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -16974,7 +16974,7 @@ ParticleSystem:
     randomPositionAmount: 0
     radius:
       value: 1
-      mode: 0
+      mode: 3
       spread: 0
       speed:
         serializedVersion: 2
@@ -17202,7 +17202,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 25
+        scalar: 15
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -17709,7 +17709,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.8333333
-      minScalar: 0.083333336
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -17759,8 +17759,8 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     speedRange: {x: 0, y: 1}
-    tilesX: 4
-    tilesY: 3
+    tilesX: 3
+    tilesY: 8
     animationType: 0
     rowIndex: 0
     cycles: 1
@@ -21057,7 +21057,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4e5262c242e62d45904927bdb899734, type: 2}
+  - {fileID: 2100000, guid: f89e932b68155ab438785d6e78d30a50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
