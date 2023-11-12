@@ -90,7 +90,7 @@ namespace Assets.Scripts
             chunk.transform.parent = transform;
             chunks.Add(chunk);
 
-            for (int i = 0; i < 7; ++i)
+            for (int i = 0; i < 5; ++i)
                 SpawnObstacle(chunk);
             
             return chunk;

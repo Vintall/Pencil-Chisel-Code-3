@@ -1,6 +1,7 @@
 using System;
 using DG.Tweening;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.Scripts.Obstacles
 {
@@ -11,7 +12,13 @@ namespace Assets.Scripts.Obstacles
         [SerializeField] private AudioSource _warningSource;
         [SerializeField] private GameObject _lethalCollider;
         [SerializeField] private GameObject _triggerCollider;
-        
+        [SerializeField] private Transform _trap;
+
+        private void Start()
+        {
+            _trap.localPosition = new Vector3(Random.Range(-4, 4), 0, 0);
+        }
+
         public void Activate()
         {
             _triggerCollider.gameObject.SetActive(false);
