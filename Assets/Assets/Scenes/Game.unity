@@ -427,8 +427,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chunkPrefab: {fileID: 3798667877519215639, guid: 717daf2d770b05d49b83cd0bd72c5c27, type: 3}
   obstaclePrefabs:
-  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
   - {fileID: 3414285456480552647, guid: cfc5d7858a75b87419d945cf996b8073, type: 3}
+  - {fileID: 3414285456480552647, guid: cfc5d7858a75b87419d945cf996b8073, type: 3}
+  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
+  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
   - {fileID: 5820123206436377765, guid: 6c36a5db63a3b774faf5aa73e3719484, type: 3}
   playerCamera: {fileID: 1132507930}
   chunks: []
@@ -459,6 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icingForeground: {fileID: 959772006}
   icingCollider: {fileID: 1887513097}
+  character: {fileID: 135839919}
   icingSpeed: 3
 --- !u!1 &566663071
 GameObject:

@@ -24507,6 +24507,134 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!1 &2903555839553908613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5896177647677589769}
+  - component: {fileID: 4238211449614845187}
+  m_Layer: 0
+  m_Name: Warning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5896177647677589769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2903555839553908613}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.13052624, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: -0.24000005, z: 0}
+  m_LocalScale: {x: 3.52, y: 3.52, z: 3.52}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 8043446377047402376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15}
+--- !u!82 &4238211449614845187
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2903555839553908613}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: cad8725518f312d41b0dd433ca7b4e39, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8f54344941efd91468e966e6b160ad4e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3255493027121797124
 GameObject:
   m_ObjectHideFlags: 0
@@ -24597,7 +24725,7 @@ GameObject:
   - component: {fileID: 1554475685225050278}
   - component: {fileID: 2904559360055779495}
   m_Layer: 0
-  m_Name: ZeuzStrike (3)
+  m_Name: ZeuzStrike4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34411,7 +34539,7 @@ GameObject:
   - component: {fileID: 2625370000782277522}
   - component: {fileID: 9082337454258285151}
   m_Layer: 0
-  m_Name: ZeuzStrike (1)
+  m_Name: ZeuzStrike2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49284,6 +49412,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 5896177647677589769}
   - {fileID: 1520589412600879357}
   - {fileID: 5142240081378284711}
   - {fileID: 1867821146813886548}
@@ -54121,7 +54250,15 @@ MonoBehaviour:
   - {fileID: 5954222762059762806}
   - {fileID: 5538209371934840109}
   - {fileID: 4979988766475251011}
+  warning: {fileID: 4238211449614845187}
   _triggerCollider: {fileID: 3968932425841438121}
+  subStrikes:
+  - {fileID: 5142240081378284711}
+  - {fileID: 1867821146813886548}
+  - {fileID: 545423868651823087}
+  - {fileID: 7196908938959937867}
+  - {fileID: 4715630565624589047}
+  - {fileID: 1506527263254972992}
 --- !u!1 &5829059135642712617
 GameObject:
   m_ObjectHideFlags: 0
@@ -54135,7 +54272,7 @@ GameObject:
   - component: {fileID: 7270860132448128274}
   - component: {fileID: 1466162739348642546}
   m_Layer: 0
-  m_Name: ZeuzStrike (5)
+  m_Name: ZeuzStrike6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78684,7 +78821,7 @@ GameObject:
   - component: {fileID: 2671714998801111112}
   - component: {fileID: 3608745844907728752}
   m_Layer: 0
-  m_Name: ZeuzStrike (2)
+  m_Name: ZeuzStrike3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83612,7 +83749,7 @@ GameObject:
   - component: {fileID: 7069174917147074308}
   - component: {fileID: 8846360503776335699}
   m_Layer: 0
-  m_Name: ZeuzStrike (4)
+  m_Name: ZeuzStrike5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88708,7 +88845,7 @@ GameObject:
   - component: {fileID: 4915646921086740441}
   - component: {fileID: 9155749090052371700}
   m_Layer: 0
-  m_Name: ZeuzStrike
+  m_Name: ZeuzStrike1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -8,13 +8,14 @@ namespace Assets.Scripts.Obstacles
     {
         [SerializeField] private ParticleSystem _particleSystem;
         [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private AudioSource _warningSource;
         [SerializeField] private GameObject _lethalCollider;
         [SerializeField] private GameObject _triggerCollider;
         
         public void Activate()
         {
             _triggerCollider.gameObject.SetActive(false);
-            
+            _warningSource.Play();
             DOTween.Sequence()
                 .AppendCallback(_particleSystem.Play)
                 .AppendInterval(0.8f)
