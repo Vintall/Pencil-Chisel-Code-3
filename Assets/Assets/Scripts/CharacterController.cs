@@ -1,5 +1,6 @@
 using System;
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -12,6 +13,15 @@ namespace Assets.Scripts
         [SerializeField, Range(1f, 10f)] private float speedDownhill;
         [SerializeField, Range(1f, 500f)] private float rotationSpeed;
         [SerializeField] private Transform boulderTransform;
+        [SerializeField] private Sprite fallingAnimationSprite;
+
+        private static CharacterController _instance;
+        public static CharacterController Instance => _instance;
+
+        private void Awake()
+        {
+            _instance = this;
+        }
 
         private void Start()
         {
@@ -35,6 +45,27 @@ namespace Assets.Scripts
             {
                 playerAnimation.Pause();
             }
+        }
+        
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("ObstacleTrigger"))
+                ObstacleTrigger(other);
+            
+            if(other.gameObject.CompareTag("LethalCollider"))
+                DeathTrigger(other);
+        }
+
+        private void ObstacleTrigger(Collider2D other)
+        {
+            other.transform.parent.GetComponent<IObstacle>().Activate();
+            
+        }
+
+        private void DeathTrigger(Collider2D other)
+        {
+            
+            Debug.LogError($"Game Over");
         }
     }
 }

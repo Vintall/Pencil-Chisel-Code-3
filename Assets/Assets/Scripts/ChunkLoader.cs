@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Assets.Scripts
 {
@@ -10,6 +11,8 @@ namespace Assets.Scripts
         public static ChunkLoader Instance => _instance;
         
         [SerializeField] private GameObject chunkPrefab;
+        [SerializeField] private List<GameObject> obstaclePrefabs;
+
         [SerializeField] private Camera playerCamera;
         [SerializeField] private List<Chunk> chunks;
         public List<Chunk> Chunks => chunks;
@@ -84,9 +87,21 @@ namespace Assets.Scripts
         public Chunk SpawnChunk()
         {
             var chunk = Instantiate(chunkPrefab).GetComponent<Chunk>();
-            chunk.transform.parent = transform.parent;
+            chunk.transform.parent = transform;
             chunks.Add(chunk);
+
+            for (int i = 0; i < 7; ++i)
+                SpawnObstacle(chunk);
+            
             return chunk;
+        }
+
+        public GameObject SpawnObstacle(Chunk chunk)
+        {
+            GameObject obstacle = Instantiate(obstaclePrefabs[Random.Range(0, obstaclePrefabs.Count)]);
+            obstacle.transform.parent = chunk.transform;
+            obstacle.transform.localPosition = new Vector3(Random.Range(-40, 32), 2, 0);
+            return obstacle;
         }
         
         public Chunk SpawnChunk(Chunk parentChunk, bool side) // false - left, true - right
