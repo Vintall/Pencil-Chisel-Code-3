@@ -6,6 +6,8 @@ namespace Assets.Scripts
     {
         [SerializeField] private BindPoint leftBindPoint;
         [SerializeField] private BindPoint rightBindPoint;
+        [SerializeField] private BoxCollider2D leftCollider;
+        [SerializeField] private BoxCollider2D rightCollider;
 
         public BindPoint LeftBindPoint => leftBindPoint;
         public BindPoint RightBindPoint => rightBindPoint;

@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -12,6 +13,12 @@ namespace Assets.Scripts
         [SerializeField, Range(1f, 500f)] private float rotationSpeed;
         [SerializeField] private Transform boulderTransform;
 
+        private void Start()
+        {
+            playerAnimation.time = 0.5f;
+            playerAnimation.Play();
+        }
+
         void Update()
         {
             float xAxis = Input.GetAxis("Horizontal");
@@ -19,16 +26,10 @@ namespace Assets.Scripts
             if (xAxis != 0)
             {
                 playerAnimation.Play();
-                if (xAxis > 0)
-                {
-                    characterTransform.position += Time.deltaTime * speedUphill * characterTransform.right;
-                    boulderTransform.Rotate(Vector3.forward, -rotationSpeed * speedUphill * Time.deltaTime, Space.World);
-                }
-                else
-                {
-                    characterTransform.position -= Time.deltaTime * speedDownhill * characterTransform.right;
-                    boulderTransform.Rotate(Vector3.forward, rotationSpeed * speedDownhill * Time.deltaTime, Space.World);
-                }
+                var speed = xAxis > 0 ? speedUphill : speedDownhill;
+                var handledSpeed = Time.deltaTime * speed * xAxis;
+                characterTransform.position += handledSpeed * characterTransform.right;
+                boulderTransform.Rotate(Vector3.forward, handledSpeed * -rotationSpeed, Space.World);
             }
             else
             {
