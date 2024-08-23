@@ -579,12 +579,8 @@ MonoBehaviour:
   - {fileID: 3414285456480552647, guid: cfc5d7858a75b87419d945cf996b8073, type: 3}
   - {fileID: 3414285456480552647, guid: cfc5d7858a75b87419d945cf996b8073, type: 3}
   - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
+  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
   - {fileID: 5820123206436377765, guid: 6c36a5db63a3b774faf5aa73e3719484, type: 3}
-  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
-  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
-  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
-  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
-  - {fileID: 3759716480471698157, guid: 86267c2b775faff4fa2dde082da61cee, type: 3}
   playerCamera: {fileID: 1132507930}
   chunks: []
 --- !u!114 &409786879

@@ -87,6 +87,7 @@ namespace Assets.Scripts
             sisyphusDeath.gameObject.SetActive(true);
             deathSequence.Play();
             GameOverCanvas.Instance.OnGameOver();
+            ScoreCounter.Instance.gameOver = true;
             gameOver = true;
         }
     }
